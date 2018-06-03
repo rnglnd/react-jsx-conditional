@@ -5,8 +5,7 @@ module.exports = {
   target: 'web',
   entry: './examples',
   output: {
-    filename: 'index.js',
-    publicPath: 'http://localhost:3000/'
+    filename: 'index.js'
   },
   module: {
     rules: [
@@ -14,16 +13,16 @@ module.exports = {
         test: /\.js$/,
         exclude: /node_modules/,
         use: ['babel-loader', 'eslint-loader']
+      },
+      {
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader']
       }
     ]
   },
   plugins: [new HtmlWebpackPlugin()],
   devtool: 'source-map',
   devServer: {
-    contentBase: 'assets',
-    port: 3000,
-    watchOptions: {
-      ignore: /node_modules/
-    }
+    port: 3000
   }
 };
