@@ -1,6 +1,6 @@
 {
   "name": "react-jsx-conditional",
-  "version": "0.2.0",
+  "version": "1.0.0",
   "description": "A lightweight conditional component to use with React 16.",
   "repository": "github:rnglnd/react-jsx-conditional",
   "main": "lib/index.js",
