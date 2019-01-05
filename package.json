@@ -1,6 +1,6 @@
 {
   "name": "react-jsx-conditional",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A lightweight conditional component to use with React 16.",
   "repository": "github:rnglnd/react-jsx-conditional",
   "main": "lib/index.js",
@@ -17,16 +17,28 @@
     "prepublish": "rm -rf lib && rm -rf es && npm run build"
   },
   "lint-staged": {
-    "*.{js,jsx,json}": ["prettier-eslint --write", "git add"]
+    "*.{js,jsx,json}": [
+      "prettier-eslint --write",
+      "git add"
+    ]
   },
   "jest": {
     "transform": {
       "^.+\\.js$": "./node_modules/babel-jest"
     },
     "testRegex": "(/__tests__/.*|(\\.|/))\\.js?$",
-    "moduleFileExtensions": ["js", "json"]
+    "moduleFileExtensions": [
+      "js",
+      "json"
+    ]
   },
-  "keywords": ["react", "component", "conditional", "if", "statement"],
+  "keywords": [
+    "react",
+    "component",
+    "conditional",
+    "if",
+    "statement"
+  ],
   "dependencies": {
     "prop-types": "15.6.2"
   },
